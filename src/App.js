@@ -61,65 +61,65 @@ function App() {
   return (
 
       <Routes>
-      <Route path="0" element={<Error/>} />
-      <Route path="67" element={<ContentBox/>} />
-      <Route path="68" element={<MapForAll/>} />
+      <Route path="/0" element={<Error/>} />
+      <Route path="/67" element={<ContentBox/>} />
+      <Route path="/68" element={<MapForAll/>} />
 
-      <Route path="69" element={<ContentBossFrog/>} />
-      <Route path="74" element={<MapBossFrog/>} />
+      <Route path="/69" element={<ContentBossFrog/>} />
+      <Route path="/74" element={<MapBossFrog/>} />
 
-      <Route path="75" element={<ContentBosGoblin/>} />
-      <Route path="82" element={<MapBossGoblin/>} />
+      <Route path="/75" element={<ContentBosGoblin/>} />
+      <Route path="/82" element={<MapBossGoblin/>} />
 
-      <Route path="83" element={<ContentBossSkillet/>} />
-      <Route path="93" element={<MapBossSkillet/>} />
+      <Route path="/83" element={<ContentBossSkillet/>} />
+      <Route path="/93" element={<MapBossSkillet/>} />
 
-      <Route path="94" element={<ContentBossUticora/>} />
-      <Route path="106" element={<MapBossUticora/>} />
+      <Route path="/94" element={<ContentBossUticora/>} />
+      <Route path="/106" element={<MapBossUticora/>} />
 
-      <Route path="107" element={<ContentBossDragon/>} />
-      <Route path="127" element={<MapBossDragon/>} />
+      <Route path="/107" element={<ContentBossDragon/>} />
+      <Route path="/127" element={<MapBossDragon/>} />
 
-       <Route path="1" element={<ContentGnomLvl1/>} />
-       <Route path="19" element={<ContentGnomLvl2/>} />
-       <Route path="31" element={<ContentGnomLvl3/>} />
-       <Route path="43" element={<ContentGnomLvl4/>} />
-       <Route path="55" element={<ContentGnomLvl5/>} />
-       <Route path="56" element={<ContentGnomLvl6/>} />
-       <Route path="57" element={<ContentGnomLvl7/>} />
-       <Route path="6" element={<MapGnomLvl1/>} />
-       <Route path="22" element={<MapGnomLvl2/>} />
-       <Route path="34" element={<MapGnomLvl3/>} />
-       <Route path="46" element={<MapGnomLvl4/>} />
-       <Route path="58" element={<MapGnomLvl5/>} />
+       <Route path="/1" element={<ContentGnomLvl1/>} />
+       <Route path="/19" element={<ContentGnomLvl2/>} />
+       <Route path="/31" element={<ContentGnomLvl3/>} />
+       <Route path="/43" element={<ContentGnomLvl4/>} />
+       <Route path="/55" element={<ContentGnomLvl5/>} />
+       <Route path="/56" element={<ContentGnomLvl6/>} />
+       <Route path="/57" element={<ContentGnomLvl7/>} />
+       <Route path="/6" element={<MapGnomLvl1/>} />
+       <Route path="/22" element={<MapGnomLvl2/>} />
+       <Route path="/34" element={<MapGnomLvl3/>} />
+       <Route path="/46" element={<MapGnomLvl4/>} />
+       <Route path="/58" element={<MapGnomLvl5/>} />
        
        
-       <Route path="7" element={<ContentElfLvl1/>} />
-       <Route path="23" element={<ContentElfLvl2/>} />
-       <Route path="35" element={<ContentElfLvl3/>} />
-       <Route path="47" element={<ContentElfLvl4/>} />
-       <Route path="59" element={<ContentElfLvl5/>} />
-       <Route path="60" element={<ContentElfLvl6/>} />
-       <Route path="61" element={<ContentElfLvl7/>} />
-       <Route path="12" element={<MapElfLvl1/>} />
-       <Route path="26" element={<MapElfLvl2/>} />
-       <Route path="38" element={<MapElfLvl3/>} />
-       <Route path="50" element={<MapElfLvl4/>} />
-       <Route path="62" element={<MapElfLvl5/>} />
+       <Route path="/7" element={<ContentElfLvl1/>} />
+       <Route path="/23" element={<ContentElfLvl2/>} />
+       <Route path="/35" element={<ContentElfLvl3/>} />
+       <Route path="/47" element={<ContentElfLvl4/>} />
+       <Route path="/59" element={<ContentElfLvl5/>} />
+       <Route path="/60" element={<ContentElfLvl6/>} />
+       <Route path="/61" element={<ContentElfLvl7/>} />
+       <Route path="/12" element={<MapElfLvl1/>} />
+       <Route path="/26" element={<MapElfLvl2/>} />
+       <Route path="/38" element={<MapElfLvl3/>} />
+       <Route path="/50" element={<MapElfLvl4/>} />
+       <Route path="/62" element={<MapElfLvl5/>} />
 
-       <Route path="13" element={<ContentHumanLvl1/>} />
-       <Route path="27" element={<ContentHumanLvl2/>} />
-       <Route path="39" element={<ContentHumanLvl3/>} />
-       <Route path="51" element={<ContentHumanLvl4/>} />
-       <Route path="63" element={<ContentHumanLvl5/>} />
-       <Route path="64" element={<ContentHumanLvl6/>} />
-       <Route path="65" element={<ContentHumanLvl7/>} />
-       <Route path="18" element={<MapHumanLvl1/>} />
-       <Route path="30" element={<MapHumanLvl2/>} />
-       <Route path="42" element={<MapHumanLvl3/>} />
-       <Route path="54" element={<MapHumanLvl4/>} />
-       <Route path="66" element={<MapHumanLvl5/>} />
-    
+       <Route path="/13" element={<ContentHumanLvl1/>} />
+       <Route path="/27" element={<ContentHumanLvl2/>} />
+       <Route path="/39" element={<ContentHumanLvl3/>} />
+       <Route path="/51" element={<ContentHumanLvl4/>} />
+       <Route path="/63" element={<ContentHumanLvl5/>} />
+       <Route path="/64" element={<ContentHumanLvl6/>} />
+       <Route path="/65" element={<ContentHumanLvl7/>} />
+       <Route path="/18" element={<MapHumanLvl1/>} />
+       <Route path="/30" element={<MapHumanLvl2/>} />
+       <Route path="/42" element={<MapHumanLvl3/>} />
+       <Route path="/54" element={<MapHumanLvl4/>} />
+       <Route path="/66" element={<MapHumanLvl5/>} />
+        <Route path="*" element={<h1>404 Not Found</h1>} />
      </Routes>
 
   );
