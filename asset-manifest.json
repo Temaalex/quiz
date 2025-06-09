@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/quiz/static/css/main.9517581a.css",
+    "main.js": "/quiz/static/js/main.121d0052.js",
+    "static/media/Party.png": "/quiz/static/media/Party.e6b21c917d48b2329eb7.png",
+    "static/media/Frog.png": "/quiz/static/media/Frog.9416a92475e953b3ab36.png",
+    "static/media/GuildMaster.png": "/quiz/static/media/GuildMaster.b87186e78f5311502a22.png",
+    "static/media/Human_4.png": "/quiz/static/media/Human_4.fa94232a8bc86004281b.png",
+    "static/media/Gnom_3.png": "/quiz/static/media/Gnom_3.b7f2e7c881149d76a929.png",
+    "static/media/Human_3.png": "/quiz/static/media/Human_3.4e4121c6ffb697bc33e1.png",
+    "static/media/All_5.png": "/quiz/static/media/All_5.ca2c30659b0bbda2aa8c.png",
+    "static/media/Gnom_2.png": "/quiz/static/media/Gnom_2.6d66549dc38baaa29e22.png",
+    "static/media/Human_2.png": "/quiz/static/media/Human_2.75f3a92694248f8a27a8.png",
+    "static/media/Elf_5.png": "/quiz/static/media/Elf_5.81991f8f2b7e451df405.png",
+    "static/media/All_3.png": "/quiz/static/media/All_3.0a48ac75bc827c439586.png",
+    "static/media/Elf_1.png": "/quiz/static/media/Elf_1.239a145d660749c964cf.png",
+    "static/media/Elf_3.png": "/quiz/static/media/Elf_3.cf10b7dbcbc87f3be396.png",
+    "static/media/Gnom_5.png": "/quiz/static/media/Gnom_5.1d201e38d1e25b6c73fe.png",
+    "static/media/Human_5.png": "/quiz/static/media/Human_5.16b546e1163272c68379.png",
+    "static/media/Gnom_4.png": "/quiz/static/media/Gnom_4.bfd6a051e2e24f72b52b.png",
+    "static/media/Gnom_1.png": "/quiz/static/media/Gnom_1.d3eaf7e0580a7f7f3d3b.png",
+    "static/media/All_1.png": "/quiz/static/media/All_1.f46c2136986eb5e86598.png",
+    "static/media/All_4.png": "/quiz/static/media/All_4.dd70d4ed08e306d8a7db.png",
+    "static/media/Elf_4.png": "/quiz/static/media/Elf_4.19978a1746b44b8ff058.png",
+    "static/media/Elf_2.png": "/quiz/static/media/Elf_2.c03228b73241334fb45a.png",
+    "static/media/Human_1.png": "/quiz/static/media/Human_1.acc2676b3cfcd96a141f.png",
+    "static/media/All_2.png": "/quiz/static/media/All_2.7d1ced8b7f20fb4e424d.png",
+    "static/media/Uticora.png": "/quiz/static/media/Uticora.3a8b7053f1d6094f293a.png",
+    "static/media/Skillet.jpg": "/quiz/static/media/Skillet.867941148b8bddc50b57.jpg",
+    "static/media/Dragon.png": "/quiz/static/media/Dragon.f3c814da29928199ff34.png",
+    "static/media/Goblin.png": "/quiz/static/media/Goblin.9ac70dcc7e749497451c.png",
+    "static/media/Box.png": "/quiz/static/media/Box.f0083bbb96ac2222c26f.png",
+    "index.html": "/quiz/index.html",
+    "main.9517581a.css.map": "/quiz/static/css/main.9517581a.css.map",
+    "main.121d0052.js.map": "/quiz/static/js/main.121d0052.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9517581a.css",
+    "static/js/main.121d0052.js"
+  ]
+}
