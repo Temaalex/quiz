@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 
@@ -59,7 +59,7 @@ import MapBossDragon from './Contents/ContentBossDragon/MapDragonBoss';
 
 function App() {  
   return (
-     <BrowserRouter>
+
       <Routes>
       <Route path="0" element={<Error/>} />
       <Route path="67" element={<ContentBox/>} />
@@ -121,7 +121,7 @@ function App() {
        <Route path="66" element={<MapHumanLvl5/>} />
     
      </Routes>
-    </BrowserRouter>
+
   );
 }
 
