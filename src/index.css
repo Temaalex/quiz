@@ -35,11 +35,12 @@ main{
   margin: 10px;
   border-radius: 15px;
   float: left;
+  overflow: hidden;
 }
 .ConnentOfGuildMaster{
   font-family: 'Roboto Mono', monospace;
   font-weight:600;
-  font-size: 20px;
+  font-size: 17px;
   margin: 10px;
 }
 .nextButton
@@ -130,7 +131,7 @@ main{
   margin-top: 20px;
 }
 .buttons__content{
-	padding: 20px
+	padding: 10px
 }
 
 .button
@@ -211,7 +212,7 @@ main{
   border: 2px solid #000000;
   border-radius: 10px;
   text-align: center;
-  height: 80px; 
+  height: auto; 
   line-height: 35px;
   position: relative;
 }

@@ -8,6 +8,10 @@ const ContentBossFrog = () => {
   
   let navigate = useNavigate();
 
+  function move(){
+    document.querySelector('.heroes').style.left= 10 + "px"
+  }
+
   let [key, setKey] = useState(69);
   const [HPboss, setHPBoss] = useState(500)
   const [HPheroes, setHPHeroes] = useState(500)
@@ -24,6 +28,7 @@ const ContentBossFrog = () => {
     if(data.contents[key].answer.answer_1[1] === true){
        setKey(key + 1)
        setHPBoss(HPboss-100)
+       move()
     } else {
       setHPHeroes(HPheroes - 100)
       if(HPheroes === 100){
