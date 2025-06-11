@@ -88,7 +88,7 @@ main{
   justify-content: space-between;
   align-items: center;
   text-align: center;
- 
+  text-transform: lowercase
 }
 .Boxes{
   margin-top: 50px;
@@ -166,6 +166,8 @@ main{
    0 1px 1px 1px rgba(255,255,255,.4),
    0 -1px 1px 1px rgba(0,0,0,.1);
 }
+
+
 .buttons__column{
   display: flex;
   justify-content: space-around;
@@ -227,17 +229,34 @@ main{
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }  
-
+.bossFrog2 {
+   height: 180px;
+   align-self: flex-end;
+}
 .bossFrog {
    height: 180px;
    align-self: flex-end;
-
+   animation: rotate 0.2s infinite;
 }
-.heroes{
+@keyframes rotate {
+ 0%{transform: rotate(-10deg)}
+ 100%{transform: rotate(10deg)}
+}
+.heroes2{
   height: 130px;
   align-self: flex-end;
-
 }
+.heroes {
+   height: 130px;
+   align-self: flex-end;
+   animation: heroes 0.2s infinite;
+}
+@keyframes heroes {
+ 0%{transform: rotate(-10deg)}
+ 100%{transform: rotate(10deg)}
+}
+
+
 .wrapHeroes{
   display: flex;
   justify-content: space-between;

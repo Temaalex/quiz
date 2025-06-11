@@ -10,8 +10,9 @@ let navigate = useNavigate();
 const checked = () => {
   let ansver = data.contents[key].answer;
   let check = document.querySelector('.inputAppWords')?.value;
-  if(check === ansver) {
+  if(check.toLowerCase() === ansver) {
     setKey(key + 1)
+    document.querySelector('.inputAppWords').value = ''
     if(key === 17){
       navigate('/18')
     } 

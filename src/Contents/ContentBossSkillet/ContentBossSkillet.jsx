@@ -1,5 +1,5 @@
 import bossSkillet from '../../Pictures/Skillet.jpg';
-import heroes from '../../Pictures/Party.png';
+import heroesImg from '../../Pictures/Party.png';
 import data from '../../bd.json';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom"
@@ -7,6 +7,19 @@ import { useNavigate } from "react-router-dom"
 const ContentBossSkillet = () => {
   
   let navigate = useNavigate();
+
+  const [bossFrog, setShake] = useState(false)
+  function move(){
+    setShake(true)
+    setTimeout(()=>setShake(false),200)
+  }
+
+  const [heroes, setShakeHeroes] = useState(false)
+  function moveHer(){
+    setShakeHeroes(true)
+    setTimeout(()=>setShakeHeroes(false),200)
+  }
+
 
   let [key, setKey] = useState(83);
   const [HPboss, setHPBoss] = useState(1000)
@@ -24,6 +37,7 @@ const ContentBossSkillet = () => {
 
   function getMap(){
     if(key === 92){
+      move()
       key = 83
       navigate('/93')
     }
@@ -32,12 +46,15 @@ const ContentBossSkillet = () => {
   const checked = () => {
     let ansver = data.contents[key].answer;
     let check = document.querySelector('.inputAppWords')?.value;
-    if(check === ansver) {
+    if(check.toLowerCase() === ansver) {
+      move()
       setKey(key + 1)
+      document.querySelector('.inputAppWords').value = ''
       setHPBoss(HPboss-100)
       removeData()
       getMap()
      }else {
+      moveHer()
       setHPHeroes(HPheroes-100)
       if(HPheroes === 100){
         navigate('/0')
@@ -49,10 +66,12 @@ const ContentBossSkillet = () => {
   function update_1(){
       getMap()
     if(data.contents[key].answer.answer_1[1] === true){
+      move()
        setKey(key + 1)
        setHPBoss(HPboss-100)
        removeData()
     } else {
+      moveHer()
       setHPHeroes(HPheroes-100)
       if(HPheroes === 100){
         navigate('/0')
@@ -63,10 +82,12 @@ const ContentBossSkillet = () => {
   function update_2(){
     getMap()
     if(data.contents[key].answer.answer_2[1] === true){
+      move()
       setKey(key + 1)
       setHPBoss(HPboss-100)
       removeData()
     } else {
+      moveHer()
       setHPHeroes(HPheroes-100)
       if(HPheroes === 100){
         navigate('/0')
@@ -77,10 +98,12 @@ const ContentBossSkillet = () => {
   function update_3(){
     getMap()
     if(data.contents[key].answer.answer_3[1] === true){
+      move()
       setKey(key + 1)
       setHPBoss(HPboss-100)
       removeData()
     } else {
+      moveHer()
       setHPHeroes(HPheroes - 100)
       if(HPheroes === 100){
         navigate('/0')
@@ -92,10 +115,12 @@ const ContentBossSkillet = () => {
   function update_4(){
     getMap()
     if(data.contents[key].answer.answer_4[1] === true){
+      move()
       setKey(key + 1)
       setHPBoss(HPboss-100)
       removeData()
     } else {
+      moveHer()
       setHPHeroes(HPheroes - 100)
       if(HPheroes === 100){
         navigate('/0')
@@ -149,14 +174,11 @@ const ContentBossSkillet = () => {
    <div className="header">
     <div className="wrapHeroes">
       <div className='contentHeroes'>
-          <img className="heroes" src={heroes} alt="heroes"/>
+          <img className={heroes ? "heroes":"heroes2"} src={heroesImg} alt="heroes"/>
           <p className='HP'>Герои: {HPheroes}HP</p>
       </div>
       <div>
-        <img 
-        animate={{ x: 100 }}  
-        transition={{ duration: 0.5 }}
-        className="bossFrog" src={bossSkillet} alt="bossSkillet"/>
+        <img className={bossFrog ? "bossFrog" : "bossFrog2"} src={bossSkillet} alt="bossSkillet"/>
         <p className='HP'>Скилет: {HPboss}HP</p>
       </div>
     </div>

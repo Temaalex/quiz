@@ -1,5 +1,5 @@
-import bossFrog from '../../Pictures/Frog.png';
-import heroes from '../../Pictures/Party.png';
+import bossFrogImg from '../../Pictures/Frog.png';
+import heroesImg from '../../Pictures/Party.png';
 import data from '../../bd.json';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom"
@@ -8,16 +8,26 @@ const ContentBossFrog = () => {
   
   let navigate = useNavigate();
 
+  const [bossFrog, setShake] = useState(false)
   function move(){
-    document.querySelector('.heroes').style.left= 10 + "px"
+    setShake(true)
+    setTimeout(()=>setShake(false),200)
+  }
+
+  const [heroes, setShakeHeroes] = useState(false)
+  function moveHer(){
+    setShakeHeroes(true)
+    setTimeout(()=>setShakeHeroes(false),200)
   }
 
   let [key, setKey] = useState(69);
   const [HPboss, setHPBoss] = useState(500)
   const [HPheroes, setHPHeroes] = useState(500)
- 
- function getMap(){
+
+
+ function getMap(){ 
     if(key === 73){
+      move()
       key = 69
       navigate('/74')
     }
@@ -26,10 +36,11 @@ const ContentBossFrog = () => {
   function update_1(){
       getMap()
     if(data.contents[key].answer.answer_1[1] === true){
+       move()
        setKey(key + 1)
        setHPBoss(HPboss-100)
-       move()
     } else {
+      moveHer()
       setHPHeroes(HPheroes - 100)
       if(HPheroes === 100){
         navigate('/0')
@@ -43,8 +54,10 @@ const ContentBossFrog = () => {
     if(data.contents[key].answer.answer_2[1] === true){
       setKey(key + 1)
       setHPBoss(HPboss-100)
+      move()
     } else {
       setHPHeroes(HPheroes - 100)
+      moveHer()
       if(HPheroes === 100){
         navigate('/0')
         setKey(69)
@@ -54,9 +67,12 @@ const ContentBossFrog = () => {
    function update_3(){
     getMap()
     if(data.contents[key].answer.answer_3[1] === true){
+      move()
       setKey(key + 1)
       setHPBoss(HPboss-100)
+      
     } else {
+      moveHer()
       setHPHeroes(HPheroes - 100)
       if(HPheroes === 100){
         navigate('/0')
@@ -68,11 +84,12 @@ const ContentBossFrog = () => {
    function update_4(){
     getMap()
     if(data.contents[key].answer.answer_4[1] === true){
+      move() 
       setKey(key + 1)
-      setHPBoss(HPboss-100)
-
+      setHPBoss(HPboss-100)    
     } else {
       setHPHeroes(HPheroes - 100)
+      moveHer()
       if(HPheroes === 100){
         navigate('/0')
         setKey(69)
@@ -86,14 +103,11 @@ const ContentBossFrog = () => {
    <div className="header">
     <div className="wrapHeroes">
       <div className='contentHeroes'>
-          <img className="heroes" src={heroes} alt="bossFrog"/>
+          <img className={heroes ? "heroes":"heroes2"} src={heroesImg} alt="heroes"/>
           <p className='HP'>Герои: {HPheroes}HP</p>
       </div>
       <div>
-          <img 
-          animate={{ x: 100 }}  
-          transition={{ duration: 0.5 }}
-          className="bossFrog" src={bossFrog} alt="bossFrog"/>
+          <img className={bossFrog ? "bossFrog" : "bossFrog2"} src={bossFrogImg} alt="bossFrog"/>
           <p className='HP'>Лягушки: {HPboss}HP</p>
       </div>
     </div>
